@@ -1,0 +1,16 @@
+shuru
+num a = 10
+num b = 4
+num sum = a + b
+num diff = a - b
+num prod = a * b
+num quot = a / b
+bol "Sum"
+bol sum
+bol "Difference"
+bol diff
+bol "Product"
+bol prod
+bol "Quotient"
+bol quot
+khatam

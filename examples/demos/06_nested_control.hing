@@ -1,0 +1,11 @@
+shuru
+num i = 1
+jabtak i <= 3
+agar i == 2
+bol "Middle"
+warna
+bol i
+khatam
+i = i + 1
+khatam
+khatam

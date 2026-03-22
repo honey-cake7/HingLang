@@ -1,0 +1,6 @@
+shuru
+num a = 10
+num b = 0
+num c = a / b
+bol c
+khatam

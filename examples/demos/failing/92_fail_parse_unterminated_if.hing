@@ -1,0 +1,4 @@
+shuru
+num a = 7
+agar a > 5
+bol "ok"
