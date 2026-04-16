@@ -10,9 +10,7 @@ import base64
 import csv
 import hashlib
 import io
-import os
 import tarfile
-import tempfile
 import zipfile
 from pathlib import Path
 
@@ -67,8 +65,8 @@ def _hash_bytes(data: bytes) -> tuple[str, int]:
 
 
 def _iter_source_files():
-    include_roots = ["hinglang", "examples"]
-    include_files = {"main.py", "run_demos.py", "README.md", "pyproject.toml", "MANIFEST.in", "build_backend.py"}
+    include_roots = ["hinglang", "examples", "tests"]
+    include_files = {"main.py", "run_demos.py", "run_tests.py", "README.md", "pyproject.toml", "MANIFEST.in", "build_backend.py"}
 
     for relative_path in sorted(include_files):
         source_path = PROJECT_ROOT / relative_path
