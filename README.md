@@ -72,6 +72,29 @@ python -m venv .venv
 python main.py --file examples/demo.hing --phase run
 ```
 
+## Install
+
+To let your professor install and run the project with `pip`, use this flow from the repository root:
+
+```powershell
+python -m venv .venv
+python -m pip install --upgrade pip
+pip install .
+```
+
+After installation, the CLI commands are:
+
+```powershell
+hinglang --file examples/demo.hing --phase run
+hinglang-demos --category success --demo all --phase run
+```
+
+If your professor wants to run it in editable mode during review, this also works:
+
+```powershell
+pip install -e .
+```
+
 ## Compiler Phases (CLI)
 
 Use the `--phase` flag to stop at any phase for debugging or learning:

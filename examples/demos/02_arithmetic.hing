@@ -1,6 +1,6 @@
 shuru
 num a = 10
-num b = 4
+num b = 0
 num sum = a + b
 num diff = a - b
 num prod = a * b

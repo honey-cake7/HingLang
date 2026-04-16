@@ -1,7 +1,9 @@
 shuru
 line a
+num b = 4
 bol "Line bata"
 sun a
 bol "Aapka Line hai"
 bol a
+bol b
 khatam

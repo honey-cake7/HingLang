@@ -1,0 +1,27 @@
+[build-system]
+requires = []
+build-backend = "build_backend"
+backend-path = ["."]
+
+[project]
+name = "hinglang"
+version = "0.1.0"
+description = "An educational compiler pipeline for HingLang"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  {name = "HingLang Project"}
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Operating System :: OS Independent",
+]
+
+[project.scripts]
+hinglang = "main:main"
+hinglang-demos = "run_demos:main"

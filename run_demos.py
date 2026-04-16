@@ -6,7 +6,8 @@ from hinglang.compiler_errors import CompilerError
 from main import run_pipeline
 
 
-DEMO_DIR = Path("examples/demos")
+PROJECT_ROOT = Path(__file__).resolve().parent
+DEMO_DIR = PROJECT_ROOT / "examples" / "demos"
 FAILING_DIR = DEMO_DIR / "failing"
 SCRIPTED_INPUTS = {
     "05_input_output.hing": ["Aniket"],

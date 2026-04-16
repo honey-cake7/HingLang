@@ -1,8 +1,8 @@
 shuru
 num i = 1
-jabtak i <= 3
+jabtak i <= 6
 agar i == 2
-bol "Middle"
+bol "TWO"
 warna
 bol i
 khatam

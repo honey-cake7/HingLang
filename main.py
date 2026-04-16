@@ -1,4 +1,5 @@
 import argparse
+from pathlib import Path
 
 from hinglang.lexer import Lexer
 from hinglang.parser import Parser
@@ -8,8 +9,23 @@ from hinglang.tac_executor import TACExecutor
 from hinglang.compiler_errors import CompilerError
 
 
+def resolve_source_file(file_path):
+    candidate = Path(file_path)
+    if candidate.is_file():
+        return candidate
+
+    project_root = Path(__file__).resolve().parent
+    fallback = project_root / file_path
+    if fallback.is_file():
+        return fallback
+
+    return candidate
+
+
 def run_pipeline(file_path, phase):
-    with open(file_path, encoding="utf-8") as f:
+    source_path = resolve_source_file(file_path)
+
+    with open(source_path, encoding="utf-8") as f:
         text = f.read()
 
     tokens = Lexer(text).tokenize()
