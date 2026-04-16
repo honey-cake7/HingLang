@@ -71,19 +71,6 @@ Run the full test suite with HingLang:
 
 The default example file is [examples/demo.hing](examples/demo.hing).
 
-## Submit To Professor
-
-Upload the full repository as a zip or GitHub link. Include these folders and files:
-
-- [pyproject.toml](pyproject.toml)
-- [build_backend.py](build_backend.py)
-- [main.py](main.py)
-- [run_demos.py](run_demos.py)
-- [examples/](examples)
-- [tests/](tests)
-
-Tell your professor to run these commands from the project root:
-
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install .
